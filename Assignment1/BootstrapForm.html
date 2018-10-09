@@ -6,49 +6,49 @@
     </head>
     <body>
             <header class ="container">BootstrapForm</header>
-            <form action="https://www.oit.edu/cst465" method="post">
+            <form action="https://www.oit.edu/cst465" method="post" id="aspnetForm">
                 <div class="form-group">
                     <label for ="Name">Name:</label>
-                    <input type="text" class="form-control" id="Name">
+                    <input type="text" name="Name" class="form-control" id="Name">
                 </div>
                 <div class="form-group"> 
                     <label for="UserType">User Type</label>
-                    <select class="form-control" id="UserType">
+                    <select class="form-control" id="UserType" name="UserType">
                         <option>Student</option>
                         <option>Teacher</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="EmailAddress">Email address:</label>
-                    <input type="text" class="form-control" id="EmailAddress">
+                    <input type="text" class="form-control" id="EmailAddress" name="EmailAddress">
                 </div>
                 <div class="form-group">
                     <label for="Band">Band:</label>
-                    <input type="text" class="form-control" id="Band">
+                    <input type="text" class="form-control" id="Band" name="Band">
                 </div>
                 <div class="form-group">
                     <label for="Hobby">Hobby:</label>
-                    <input type="text" class="form-control" id="Hobby">
+                    <input type="text" class="form-control" id="Hobby" name="Hobby">
                 </div>
                 <div class="form-group">
                     <label for="CoursePrefix">Course Prefix:</label>
-                    <input type="text" class="form-control" id="CoursePrefix">
+                    <input type="text" class="form-control" id="CoursePrefix" name="CoursePrefix">
                 </div>
                 <div class="form-group">
-                    <label for="coursenumber">Course Number:</label>
-                    <input type="coursenumber" class="form-control" id="coursenumber">
+                    <label for="CourseNumber">Course Number:</label>
+                    <input type="text" class="form-control" id="coursenumber" name="CourseNumber">
                 </div>
                 <div class="form-group">
-                    <label for="coursedescription">Course Description:</label>
-                    <input type="coursedescription" class="form-control" id="coursedescription">
+                    <label for="CourseDescription">Course Description:</label>
+                    <input type="coursedescription" class="form-control" id="coursedescription" name="CourseDescription">
                 </div>
                 <div class="form-group">
-                    <label for="biography">Biography:</label>
-                    <textarea class="form-control" rows="3" id ="biography"></textarea>
+                    <label for="Biography">Biography:</label>
+                    <textarea class="form-control" rows="3" id ="biography" name="Biography"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="nickname">Nickname:</label>
-                    <input type="nickname" class="form-control" id="nickname">
+                    <input type="nickname" class="form-control" id="nickname" name="Nickname">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
          
