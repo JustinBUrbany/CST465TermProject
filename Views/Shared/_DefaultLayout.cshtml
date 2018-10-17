@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/CSS/DefaultStyles.css"/>
+</head>
+<body>
+    <header>
+        @RenderSection("Header", false)
+    </header>
+    <nav class="navbar navbar-dark bg-dark">
+        <ul class="navbar-nav navbar-right">
+            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
+            </li>
+            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "About" ? "active" : "")">
+                @Html.ActionLink("About", "Index", "About", null, new { @class = "nav-link" })
+            </li>
+            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Contact" ? "active" : "")">
+                @Html.ActionLink("Contact", "Index", "Contact", null, new { @class = "nav-link" })
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        @RenderBody()
+        <p class="Red">Some Text in Red</p>
+        <p class="Purple">Some Text in Green</p>
+        <p class="Green">Some Text in Purple</p>
+        <p class="Yellow">Some Text in Gold would look good on black background</p>
+    </main>
+</body>
+</html>
