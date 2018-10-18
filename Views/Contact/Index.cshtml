@@ -3,27 +3,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Contact Index</h2>
+<h2 class="page-header">Contact Index</h2>
 
 <p> Enter Your contact information below and we will get back to you soon</p>
 
-@using (Html.BeginForm("Create", "Contact"))
+@using (Html.BeginForm(FormMethod.Post))
 {
-    <div class="form-group">
-        @Html.LabelFor(m => m.Name, new { @class = "control-label" })
-        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
-        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "control-label" })
-        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Message, new { @class = "control-label" })
-        @Html.TextBoxFor(m => m.Message, new { @class = "form-control" })
-    </div>
-    <button type="submit">Save Contact Information</button>
+<div class="form-group">
+    @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Name)
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
+    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.PhoneNumber)
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Email)
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.Message, new { @class = "control-label" })
+    @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Message)
+</div>
+    <button type="submit" class="btn btn-primary">Submit Contact Information</button>
 }

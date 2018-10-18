@@ -10,17 +10,22 @@ namespace ASPTermProject.Controllers
     public class ContactController : Controller
     {
         [HttpGet]
-        public IActionResult Index(ContactModel contact)
+        public IActionResult Index()
         {
-            return View(contact);
+            return View();
         }
-
-
-
         [HttpPost]
+        public IActionResult Index(ContactModel model)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            return Create(model);
+        }
         public IActionResult Create(ContactModel contact)
         {
-            return View(contact);
+            return View("Create",contact);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,16 +9,16 @@ namespace ASPTermProject.Models
 {
     public class ContactModel
     {
-        [Display(Name ="Name")]
+        [DisplayName("Name")]
         [Required(ErrorMessage = "Name is Required")]
         public string Name { get; set; }
-        [Display(Name ="PhoneNumber")]
+        [DisplayName("PhoneNumber")]
         [Required(ErrorMessage = "PhoneNumber is Required")]
         public string PhoneNumber { get; set; }
-        [Display(Name = "Email")]
+        [DisplayName("Email")]
         [Required(ErrorMessage = "Email is Required")]
         public string Email { get; set; }
-        [Display(Name = "Message")]
+        [DisplayName("Message")]
         [Required(ErrorMessage = "Message is Required")]
         public string Message { get; set; }
     }

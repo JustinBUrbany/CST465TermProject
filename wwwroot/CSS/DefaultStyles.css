@@ -1,14 +1,14 @@
 ﻿body {
 }
 .Red{
-    color:#FE5054 !important;
+    color:#FE5054;
 
 }
 .Green{
     color:#53EE4A;
 }
 .Purple{
-    color:#755AE3 !important;
+    color:#755AE3;
 }
 .Yellow{
     color:#FFDE50;
@@ -17,4 +17,18 @@
 .item{
     color: #FE5054 !important;
     background-color:#755AE3;
+}
+.Footer {
+    background-color: #755AE3;
+    color: #FFDE50;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.page-header {
+    background-color: #FE5054;
+    color: #53EE4A;
 }
