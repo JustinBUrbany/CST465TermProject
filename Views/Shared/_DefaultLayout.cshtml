@@ -10,27 +10,27 @@
     <header>
         @RenderSection("Header", false)
     </header>
-    <nav class="navbar navbar-dark bg-dark">
-        <ul class="navbar-nav navbar-right">
-            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">
+    <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark Purple">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-3 Red">
                 @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
-            </li>
-            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "About" ? "active" : "")">
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3 nav-item">
                 @Html.ActionLink("About", "Index", "About", null, new { @class = "nav-link" })
-            </li>
-            <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Contact" ? "active" : "")">
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3 nav-item">
                 @Html.ActionLink("Contact", "Index", "Contact", null, new { @class = "nav-link" })
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
-
-
-    <main>
-        @RenderBody()
-        <p class="Red">Some Text in Red</p>
-        <p class="Purple">Some Text in Green</p>
-        <p class="Green">Some Text in Purple</p>
-        <p class="Yellow">Some Text in Gold would look good on black background</p>
-    </main>
+    </div>
+        <main>
+            @RenderBody()
+            <p class="Red">Some Text in Red</p>
+            <p class="Purple">Some Text in Green</p>
+            <p class="Green">Some Text in Purple</p>
+            <p class="Yellow">Some Text in Gold would look good on black background</p>
+        </main>
 </body>
 </html>

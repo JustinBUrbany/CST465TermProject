@@ -1,15 +1,20 @@
 ﻿body {
 }
 .Red{
-    color:#FE5054;
+    color:#FE5054 !important;
 
 }
 .Green{
     color:#53EE4A;
 }
 .Purple{
-    color:#755AE3;
+    color:#755AE3 !important;
 }
 .Yellow{
     color:#FFDE50;
+}
+
+.item{
+    color: #FE5054 !important;
+    background-color:#755AE3;
 }

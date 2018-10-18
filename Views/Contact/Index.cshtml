@@ -1,7 +1,29 @@
-﻿
+﻿@model ASPTermProject.Models.ContactModel
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Contact Index</h2>
 
+<p> Enter Your contact information below and we will get back to you soon</p>
+
+@using (Html.BeginForm("Create", "Contact"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Message, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.Message, new { @class = "form-control" })
+    </div>
+    <button type="submit">Save Contact Information</button>
+}
