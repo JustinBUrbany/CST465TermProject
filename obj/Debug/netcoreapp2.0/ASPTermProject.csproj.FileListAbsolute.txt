@@ -1,0 +1,10 @@
+Z:\final\CST465TermProject\bin\Debug\netcoreapp2.0\ASPTermProject.deps.json
+Z:\final\CST465TermProject\bin\Debug\netcoreapp2.0\ASPTermProject.runtimeconfig.json
+Z:\final\CST465TermProject\bin\Debug\netcoreapp2.0\ASPTermProject.runtimeconfig.dev.json
+Z:\final\CST465TermProject\bin\Debug\netcoreapp2.0\ASPTermProject.dll
+Z:\final\CST465TermProject\bin\Debug\netcoreapp2.0\ASPTermProject.pdb
+Z:\final\CST465TermProject\obj\Debug\netcoreapp2.0\ASPTermProject.csproj.CoreCompileInputs.cache
+Z:\final\CST465TermProject\obj\Debug\netcoreapp2.0\ASPTermProject.AssemblyInfoInputs.cache
+Z:\final\CST465TermProject\obj\Debug\netcoreapp2.0\ASPTermProject.AssemblyInfo.cs
+Z:\final\CST465TermProject\obj\Debug\netcoreapp2.0\ASPTermProject.dll
+Z:\final\CST465TermProject\obj\Debug\netcoreapp2.0\ASPTermProject.pdb

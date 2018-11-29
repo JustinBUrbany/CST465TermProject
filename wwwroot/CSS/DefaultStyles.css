@@ -1,8 +1,8 @@
-﻿body {
+﻿div a{
+    color:white;
 }
 .Red{
     color:#FE5054;
-
 }
 .Green{
     color:#53EE4A;
@@ -13,11 +13,6 @@
 .Yellow{
     color:#FFDE50;
 }
-
-.item{
-    color: #FE5054 !important;
-    background-color:#755AE3;
-}
 .Footer {
     background-color: #755AE3;
     color: #FFDE50;
@@ -27,8 +22,19 @@
     width: 100%;
     text-align: center;
 }
-
 .page-header {
     background-color: #FE5054;
     color: #53EE4A;
+}
+h1 {
+    align-content: center;
+}
+button.search {
+    align-items: center;
+}
+img.home {
+    align-items: center;
+}
+h4.home {
+    align-items: center;
 }
